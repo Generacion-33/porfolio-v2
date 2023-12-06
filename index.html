@@ -57,6 +57,14 @@
   <!-- soporte propiedades y etiquetas que aun el navegador no lo soporta -->
   <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
 
+
+  <!-- emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('kQNN14WaxT2rXGP4w')
+  </script>
+
 </head>
 
 <body class="body body--ligth body--dark">
@@ -341,7 +349,7 @@
         Mensaje:
       </label>
 
-      <textarea type="text" id="message" name="message" required class="form__input form__area"> </textarea>
+      <textarea type="text" id="message" name="message" required class="form__input form__area" rows="4"> </textarea>
 
       <button id="btn-send" type="submit" class="form__button" data-translate-en="Send"
         data-translate-es="Enviar">Enviar</button>

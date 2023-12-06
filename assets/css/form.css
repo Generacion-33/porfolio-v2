@@ -50,6 +50,7 @@
   width: 100%;
   padding: 8px;
   margin-bottom: 1rem;
+  border: none;
 }
 
 .form__area {
@@ -61,11 +62,12 @@
 
 .form__button {
   padding: 10px;
-  background-color: var(--text);
-  color: var(--bg);
+  background-color: var(--morph1);
+  color: var(--text);
   cursor: pointer;
   transition: transform 0.5s;
-  width: 100%;
+  /* width: 100%; */
+  border: none;
 }
 
 .form__button:hover {
@@ -74,4 +76,11 @@
 
 .form__button:active {
   transform: scale(0.8);
+}
+
+@media (max-width:950px) {
+  .form--conteiner {
+    margin: 4rem 2rem;
+    padding: 0;
+  }
 }
